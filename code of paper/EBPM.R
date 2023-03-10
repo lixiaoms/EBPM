@@ -49,7 +49,7 @@ sigma_semipositive<-function(cov_input){
   ## Find columns (rows) with all 0 and keep them unchange
   index <- apply(cov_input,1,function(x) all(x==0))
               
-  ## Optimatization by minimizing the finite norm--------------------
+  ## Optimatization by minimizing the infinity norm--------------------
   cov <- cov_input[!index,!index]
   S <- Variable(dim(cov)[1], dim(cov)[1], PSD = TRUE)
   
