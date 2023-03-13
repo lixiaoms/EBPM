@@ -11,9 +11,9 @@ Please install the dependency package: CVXR
 
 Input
 ---
-p × q matrix $Y$ (0 or NA in the unobserved matrix entries)
-p x q matrix $\Omega$ (0-1 matrix, indication of observed matrix entries)
-number of cores $m$
+p × q matrix $Y$ (0 or NA in the unobserved matrix entries)  
+p x q matrix $\textit{obs}$ (0-1 matrix, indication of observed matrix entries)  
+number of cores $m$ (Default number is 1)
 
 Output
 ---
@@ -24,9 +24,11 @@ Usage
 ---
 ### Matrix denoising
 ``` r
-EB_denoise(Y, n=$m$)
+source('EBPM.R')
+EB_denoise(Y, n=m)
 ```
 ### Matrix completion
 ``` r
-EB_denoise(Y, obs=$\Omega$, n=$m$)
+source('EBPM.R')
+EB_denoise(Y, obs=obs, n=m)
 ```
