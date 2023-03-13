@@ -11,13 +11,13 @@ Please install the dependency package: CVXR
 
 Input
 ---
-p × q matrix $Y$ (0 or NA in the unobserved matrix entries)  
+p × q matrix $Y$ (observed matrix, 0 or NA in the unobserved matrix entries)  
 p x q matrix $\textit{obs}$ (0-1 matrix, indication of observed matrix entries)  
-number of cores $m$ (Default number is 1)
+number of cores $m$ (default value is 1)
 
 Output
 ---
-p x q matrix $\widehat M$ (The estimated underlying matrix)
+p x q matrix $\widehat M$ (estimated underlying matrix)
 
 
 Usage 
@@ -30,5 +30,5 @@ EB_denoise(Y, n=m)
 ### Matrix completion
 ``` r
 source('EBPM.R')
-EB_denoise(Y, obs=obs, n=m)
+EB_complete(Y, obs, n=m)
 ```
