@@ -12,7 +12,7 @@ Please install the dependency package: CVXR
 Input
 ---
 p × q matrix $Y$ (observed matrix, 0 or NA in the unobserved matrix entries)  
-p x q matrix $\textit{obs}$ (0-1 matrix, indication of observed matrix entries)  
+p × q matrix $\textit{obs}$ (0-1 matrix, indication of observed matrix entries)  
 number of cores $m$ (default value is 1)
 
 Output
