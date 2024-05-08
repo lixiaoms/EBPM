@@ -32,8 +32,13 @@ EB_denoise(Y, n=m)
 source('EBPM.R')
 EB_complete(Y, obs, n=m)
 ```
+We recommend using EB_complete(Y, obs, n=m, control=1) to control the magnitude of estimated values.
 
 Demo
 ---
 There are some demo on the simulated data.
 Please read the notebook "EBPM.ipynb" in the folder "code of paper".
+
+Citation
+---
+Li X, Matsuda T, Komaki F. Empirical Bayes Poisson Matrix Completion[J]. Computational Statistics & Data Analysis, 2024: 107976. https://doi.org/10.1016/j.csda.2024.107976
